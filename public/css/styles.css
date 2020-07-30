@@ -1,0 +1,21 @@
+body {
+  background-color: #e8ecef;
+}
+
+.centered {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.container > img {
+  border-radius: 50px;
+}
+.container > a {
+  margin-right: 75px;
+}
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
