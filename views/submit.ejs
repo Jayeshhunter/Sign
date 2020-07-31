@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<div class="container">
+<!-- <div class="container">
   <div class="jumbotron centered">
     <i class="fas fa-key fa-6x"></i>
     <h1 class="display-3">Secrets</h1>
@@ -15,6 +15,35 @@
     </form>
 
 
+  </div>
+</div> -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Top Restaurants in your location</h1>
+    <p class="lead">
+      This is a modified jumbotron that occupies the entire horizontal space of
+      its parent.
+    </p>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Restaurants</th>
+          <th scope="col">Rating</th>
+          <th scope="col">Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i=0; i<length; i++) { %>
+        <tr>
+          <th scope="row"><%= i+1 %></th>
+          <td><%= newListItems[i].name %></td>
+          <td><%= newListItems[i].rating %></td>
+          <td><%= newListItems[i].text %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
   </div>
 </div>
 <%- include('partials/footer') %>
